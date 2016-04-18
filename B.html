@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flip effect user testing concept</title>
+	<style type="text/css">
+	#wraper{
+	margin-left: 40%;
+	margin-top: 203px;
+	}
+	/* 1 */
+	.flip3d{
+		width: 240px;
+		height: 200px;
+		margin: 10px;
+		float: left;
+	}
+
+	.flip3d > .front{
+		position: absolute;
+		-moz-transform: perspective( 600px ) rotateY( 0deg );
+		/*background-color: #fc0;*/
+		width: 240px;
+		height: 200px;
+		border-radius: 7px;
+		-moz-backface-visibility: hidden;
+		-moz-transition: transform .5s linear 0s;
+	}
+
+		.flip3d > .back{
+		position: absolute;
+		-moz-transform: perspective( 600px ) rotateY( 180deg );
+		/*background-color: #ccc;*/
+		width: 240px;
+		height: 200px;
+		border-radius: 7px;
+		-moz-backface-visibility: hidden;
+		-moz-transition: transform .5s linear 0s;
+	}
+
+
+/*
+	.flip3d:hover > .front{
+			-moz-transform: perspective( 600px ) rotateY( -180deg );
+	
+
+	}
+
+		.flip3d:hover > .back{
+			-moz-transform: perspective( 600px );
+	
+
+	}
+	*/
+.img1{
+	position: absolute;
+	width: 510px;
+	height: 330px;
+	z-index: -999;
+	margin-left: -200px;
+	margin-top: -80px;
+}
+.img2{
+	position: absolute;
+	width: 510px;
+	height: 330px;
+	z-index: -999;
+	margin-left: -172px;
+	margin-top: -5px;
+}
+
+.img3{
+	position: absolute;
+	width: 510px;
+	height: 330px;
+	z-index: -999;
+	margin-left: -221px;
+	margin-top: -210px;
+}
+
+.img4{
+	position: absolute;
+	width: 510px;
+	height: 330px;
+	z-index: -999;
+	margin-left: -192px;
+	margin-top: -135px;
+}
+p{
+	text-align: center;
+	margin-left: -180px;
+	margin-top: -20px;
+	padding: 17px;
+}
+
+
+button{
+	position: absolute;
+	margin-top: 35px;
+}
+
+#grade1 {
+	position: absolute;
+	 transform:rotate(270deg);
+	 margin-top: 50px;
+	}
+
+	#grade2 {
+		position: absolute;
+	 transform:rotate(270deg);
+	 margin-top: 10px;
+	 margin-left: 60px;
+	}
+
+	#grade3 {
+	position: absolute;
+	transform: rotate(270deg);
+	margin-top: -28px;
+	margin-left: 105px;
+	}
+
+	#grade4 {
+	position: absolute;
+	transform: rotate(270deg);
+	margin-top: -65px;
+	margin-left: 139px;
+	}
+
+	#grade{
+	margin-left: 70px;
+	margin-top: 97px;
+	position: absolute;
+	}
+
+#grade-2{
+	margin-left: 122px;
+	margin-top: 57px;
+	position: absolute;
+}
+
+#grade-3{
+	margin-left: 167px;
+	margin-top: 17px;
+	position: absolute;
+}
+
+#grade-4{
+	margin-left: 201px;
+	margin-top: -23px;
+	position: absolute;
+}
+
+#R{
+	margin-left: 201px;
+	margin-top: -9px;
+	position: absolute;
+}
+#P{
+	margin-left: 70px;
+	margin-top: 110px;
+	position: absolute;
+}
+
+#T{
+	margin-left: 122px;
+	margin-top: 70px;
+	position: absolute;
+}
+#J{
+	margin-left: 167px;
+	margin-top: 31px;
+	position: absolute;
+}
+#wraper2{
+	margin-left: -104px;
+	width: 300px;
+	margin-top: -13px;
+}
+#p2{
+	margin-left: -13px;
+}
+
+img{
+	position: absolute;
+	margin-top: -76px;
+}
+	</style>
+
+	<script type="text/javascript">
+
+	function front(){
+		document.getElementById('front').style.transform = "perspective( 600px ) rotateY( -180deg )";
+
+		document.getElementById('back').style.transform = "perspective( 600px ) rotateY( 0deg )";
+	}
+
+		function back(){
+		document.getElementById('front').style.transform = "perspective( 600px ) rotateY( 0deg )";
+
+		document.getElementById('back').style.transform = "perspective( 600px ) rotateY( -180deg )";
+	}
+
+		function front2(){
+		document.getElementById('front2').style.transform = "perspective( 600px ) rotateY( -180deg )";
+
+		document.getElementById('back2').style.transform = "perspective( 600px ) rotateY( 0deg )";
+	}
+
+		function back2(){
+		document.getElementById('front2').style.transform = "perspective( 600px ) rotateY( 0deg )";
+
+		document.getElementById('back2').style.transform = "perspective( 600px ) rotateY( -180deg )";
+	}
+
+		function front3(){
+		document.getElementById('front3').style.transform = "perspective( 600px ) rotateY( -180deg )";
+
+		document.getElementById('back3').style.transform = "perspective( 600px ) rotateY( 0deg )";
+	}
+
+		function back3(){
+		document.getElementById('front3').style.transform = "perspective( 600px ) rotateY( 0deg )";
+
+		document.getElementById('back3').style.transform = "perspective( 600px ) rotateY( -180deg )";
+	}
+		function front4(){
+		document.getElementById('front4').style.transform = "perspective( 600px ) rotateY( -180deg )";
+
+		document.getElementById('back4').style.transform = "perspective( 600px ) rotateY( 0deg )";
+	}
+
+		function back4(){
+		document.getElementById('front4').style.transform = "perspective( 600px ) rotateY( 0deg )";
+
+		document.getElementById('back4').style.transform = "perspective( 600px ) rotateY( -180deg )";
+	}
+
+		function sliderChanged(val){
+			// use AJAX or PHP to send data to a data base to store the value the student chooses
+			document.getElementById('grade').innerHTML = val;
+		}
+		function sliderChanged2(val){
+			// use AJAX or PHP to send data to a data base to store the value the student chooses
+			document.getElementById('grade-2').innerHTML = val;
+		}
+
+				function sliderChanged3(val){
+			// use AJAX or PHP to send data to a data base to store the value the student chooses
+			document.getElementById('grade-3').innerHTML = val;
+		}
+
+				function sliderChanged4(val){
+			// use AJAX or PHP to send data to a data base to store the value the student chooses
+			document.getElementById('grade-4').innerHTML = val;
+		}
+
+	</script>
+</head>
+<body>
+<img src="slider.png">
+	<div id="wraper">
+	<div class="flip3d" id="flip3d">
+			<div class="back" id="back">
+				<img src="peer-review-back.png" class="img1">
+					<div id="wraper2">
+						<input type="range" id="grade1" min="1" max="5" value="1" step="1" onChange="sliderChanged(this.value)" />
+						<br /><br />
+						<div id="P">P</div><span id="grade">1</span>
+
+
+							<input type="range" id="grade2" min="1" max="5" value="1" step="1" onChange="sliderChanged2(this.value)" />
+						<br /><br />
+						<div id="T">T</div><span id="grade-2">1</span>
+
+						<input type="range" id="grade3" min="1" max="5" value="1" step="1" onChange="sliderChanged3(this.value)" />
+						<br /><br />
+						<div id="J">J</div><span id="grade-3">1</span>
+
+							<input type="range" id="grade4" min="1" max="5" value="1" step="1" onChange="sliderChanged4(this.value)" />
+						<br /><br />
+						<div id="R">R</div><span id="grade-4">1</span>
+						</div>
+				<button  onclick="back();">Done</button>
+			</div>
+			<div class="front" id="front">
+				<img src="peer-review.png" class="img1">
+				<p>Question 1: Engagment</p>
+				<button onclick="front();">Review</button>
+			</div>
+		
+	</div>
+	<!--
+
+		<div class="flip3d" id="flip3d2">
+			<div class="back" id="back2">
+				<img src="peer-review-back.png" class="img2">
+				<p>Q1: Engagment: Rate 1-5</p>
+				<p>Q2: Practical skills: Rate 1-5</p>
+				<p>Q3: Team work: Rate 1-5</p>
+				<p>Q4: Technical skills: Rate 1-5</p>
+				<button  onclick="back2();">Done</button>
+			</div>
+			<div class="front" id="front2">
+				<img src="peer-review.png" class="img2">
+				<p>Robyn Thompson</p>
+				<button onclick="front2();">Review</button>
+			</div>
+		
+	</div>
+
+			<div class="flip3d" id="flip3d3">
+			<div class="back" id="back3">
+				<img src="peer-review-back.png" class="img3">
+				<p>Q1: Engagment: Rate 1-5</p>
+				<p>Q2: Practical skills: Rate 1-5</p>
+				<p>Q3: Team work: Rate 1-5</p>
+				<p>Q4: Technical skills: Rate 1-5</p>
+				<button  onclick="back3();">Done</button>
+			</div>
+			<div class="front" id="front3">
+				<img src="peer-review.png" class="img3">
+				<p>Tadgh Mc Nealy</p>
+				<button onclick="front3();">Review</button>
+			</div>
+		
+	</div>
+-->
+		</div>
+<!--
+			<div class="flip3d" id="flip3d4">
+			<div class="back" id="back4">
+				<img src="peer-review-back.png" class="img4">
+				<p>Q1: Engagment: Rate 1-5</p>
+				<p>Q2: Practical skills: Rate 1-5</p>
+				<p>Q3: Team work: Rate 1-5</p>
+				<p>Q4: Technical skills: Rate 1-5</p>
+				<button  onclick="back4();">Done</button>
+			</div>
+			<div class="front" id="front4">
+				<img src="peer-review.png" class="img4">
+				<p>Jason Nelligan</p>
+				<button onclick="front4();">Review</button>
+			</div>
+		
+	</div>
+-->
+</dv>
+</body>
+</html>
